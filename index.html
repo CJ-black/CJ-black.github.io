@@ -25,17 +25,47 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 <!-- Styles -->
 <link rel="stylesheet" href="style.css">
 
-<!-- Inline CSS for ad spacing and sticky -->
 <style>
-  .ad-blog { text-align:center; margin:15px 0; }
-  .ad-header { text-align:center; margin:10px 0; }
-  .ad-footer { position:fixed; bottom:0; width:100%; text-align:center; z-index:999; display:none; background:#fff; }
-  @media(max-width:768px){ .ad-header { display:none; } }
-</style>
+/* Ad Containers */
+.ad-blog { text-align:center; margin:15px 0; }
+.ad-header { text-align:center; margin:10px 0; }
+.ad-footer { position:fixed; bottom:0; width:100%; text-align:center; z-index:999; display:none; background:#fff; }
 
+/* Animated Social Bar */
+.social-bar {
+  position: fixed;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  background: rgba(0,0,0,0.6);
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+  z-index: 1000;
+  transition: left 0.3s;
+}
+.social-bar:hover { left: 0; }
+.social-bar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  margin: 2px 0;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+.social-bar a:hover { background: #1da1f2; transform: scale(1.1); }
+
+/* Hide on small screens */
+@media(max-width:768px){ .ad-header { display:none; } .social-bar { display:none; } }
+</style>
 </head>
 <body>
 
@@ -58,16 +88,20 @@
   <script type="text/javascript" src="//pl27971175.effectivegatecpm.com/af/b8/a2/afb8a2e9d4fabcc09d5b38f62cf36e5c.js"></script>
 </div>
 
-<!-- Hero Section -->
+<!-- Hero Section + Inline Ad -->
 <section id="home" class="hero">
   <div class="container">
     <h1>CashPilot — Navigate Your Money Like a Pro</h1>
     <p>Smart guides and tools to master your money game.</p>
     <a href="#blog" class="cta-button">Start Learning</a>
+
+    <div class="ad-blog">
+      <script type='text/javascript' src='//pl27971322.effectivegatecpm.com/2a/1e/6b/2a1e6baf8635d7ee845ec4161a7d05fd.js'></script>
+    </div>
   </div>
 </section>
 
-<!-- Smart Tips -->
+<!-- Smart Tips + Inline Ad -->
 <section id="tips" class="tips">
   <div class="container">
     <h2>Smart Money Tips</h2>
@@ -75,6 +109,13 @@
       <div class="tip-card"><div class="icon">💰</div><h3>Budget Mastery</h3><p>Learn effective budgeting strategies that actually work.</p></div>
       <div class="tip-card"><div class="icon">📈</div><h3>Investment Basics</h3><p>Start your investment journey with confidence.</p></div>
       <div class="tip-card"><div class="icon">🎯</div><h3>Goal Setting</h3><p>Set and achieve your financial goals systematically.</p></div>
+    </div>
+
+    <div class="ad-blog">
+      <script type="text/javascript">
+        atOptions = {'key':'87adaba6aaaad246465d6e3758048a0e','format':'iframe','height':250,'width':300,'params':{}};
+      </script>
+      <script type="text/javascript" src="//www.highperformanceformat.com/87adaba6aaaad246465d6e3758048a0e/invoke.js"></script>
     </div>
   </div>
 </section>
@@ -85,65 +126,28 @@
     <h2>Make Money Smarter</h2>
     <div class="blog-grid">
 
-      <!-- Blog Post 1 -->
       <article class="blog-card">
         <h3>10 Passive Income Streams for 2025</h3>
         <p>Discover proven ways to generate passive income in the digital age...</p>
-
-        <!-- Inline 300x250 Banner -->
-        <div class="ad-blog">
-          <script type="text/javascript">
-            atOptions = {
-              'key' : '87adaba6aaaad246465d6e3758048a0e',
-              'format' : 'iframe',
-              'height' : 250,
-              'width' : 300,
-              'params' : {}
-            };
-          </script>
-          <script type="text/javascript" src="//www.highperformanceformat.com/87adaba6aaaad246465d6e3758048a0e/invoke.js"></script>
-        </div>
       </article>
 
-      <!-- Blog Post 2 -->
       <article class="blog-card">
         <h3>Cryptocurrency: A Beginner's Guide</h3>
         <p>Everything you need to know about getting started with crypto...</p>
-
-        <!-- Inline 300x250 Banner -->
-        <div class="ad-blog">
-          <script type="text/javascript">
-            atOptions = {
-              'key' : '87adaba6aaaad246465d6e3758048a0e',
-              'format' : 'iframe',
-              'height' : 250,
-              'width' : 300,
-              'params' : {}
-            };
-          </script>
-          <script type="text/javascript" src="//www.highperformanceformat.com/87adaba6aaaad246465d6e3758048a0e/invoke.js"></script>
-        </div>
       </article>
 
-      <!-- Blog Post 3 -->
       <article class="blog-card">
         <h3>Emergency Fund: Why You Need One</h3>
         <p>Learn how to build and maintain your financial safety net...</p>
-
-        <!-- Inline 300x250 Banner -->
-        <div class="ad-blog">
-          <script type="text/javascript">
-            atOptions = {
-              'key' : '87adaba6aaaad246465d6e3758048a0e',
-              'format' : 'iframe',
-              'height' : 250,
-              'width' : 300,
-              'params' : {}
-            };
-          </script>
-          <script type="text/javascript" src="//www.highperformanceformat.com/87adaba6aaaad246465d6e3758048a0e/invoke.js"></script>
-        </div>
       </article>
+
+      <!-- Inline Blog Ad -->
+      <div class="ad-blog">
+        <script type="text/javascript">
+          atOptions = {'key':'87adaba6aaaad246465d6e3758048a0e','format':'iframe','height':250,'width':300,'params':{}};
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/87adaba6aaaad246465d6e3758048a0e/invoke.js"></script>
+      </div>
 
     </div>
   </div>
@@ -156,7 +160,7 @@
     <div class="tools-grid">
       <div class="tool-preview"><h3>Budget Calculator</h3><p>Coming Soon</p></div>
       <div class="tool-preview"><h3>Investment Returns Calculator</h3><p>Coming Soon</p></div>
-      <div class="tool-preview"><h3>Debt Payoff Tracker</h3><p>Coming Soon</p></div>
+      <div class="tool-preview"><h3>Debt Payoff Tracker</p></div>
     </div>
   </div>
 </section>
@@ -167,19 +171,6 @@
     <p>© 2025 CashPilot. Built with ❤️ by Salah.</p>
   </div>
 </footer>
-
-<!-- Scripts -->
-<script src="script.js"></script>
-
-<!-- Popunder (1 per session) -->
-<script>
-if(!sessionStorage.getItem('popunder')){
-  let script = document.createElement('script');
-  script.src = "//pl27971175.effectivegatecpm.com/af/b8/a2/afb8a2e9d4fabcc09d5b38f62cf36e5c.js";
-  document.body.appendChild(script);
-  sessionStorage.setItem('popunder','true');
-}
-</script>
 
 <!-- Mobile Sticky Banner -->
 <div class="ad-footer" id="mobileAd">
@@ -192,5 +183,28 @@ if(window.innerWidth <= 768){
 }
 </script>
 
+<!-- Popunder -->
+<script>
+if(!sessionStorage.getItem('popunder')){
+  let script = document.createElement('script');
+  script.src = "//pl27971175.effectivegatecpm.com/af/b8/a2/afb8a2e9d4fabcc09d5b38f62cf36e5c.js";
+  document.body.appendChild(script);
+  sessionStorage.setItem('popunder','true');
+}
+</script>
+
+<!-- Animated Social Bar -->
+<div class="social-bar">
+  <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+  <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+
+<!-- Additional Ad Script -->
+<script type='text/javascript' src='//pl27971322.effectivegatecpm.com/2a/1e/6b/2a1e6baf8635d7ee845ec4161a7d05fd.js'></script>
+
+<!-- Main JS -->
+<script src="script.js"></script>
 </body>
 </html>
